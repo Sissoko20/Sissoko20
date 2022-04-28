@@ -1,0 +1,111 @@
+ 
+
+<ion-content [fullscreen]="true">
+ 
+
+  <div id="container">
+    
+   <div class="profilePresent">
+    <ion-avatar>
+      <img src="../../assets/images.jfif" />
+    </ion-avatar>
+
+    <div class="textShow">
+      <p>Bonjour</p>
+      <p style="font-weight: bold;">users </p>
+      
+    </div>
+    <ion-icon slot="end" name="home"></ion-icon>
+   </div>
+   <div class="blurimg" >
+   <ion-img src="../../assets/pngkit_acuarela-png_7915195.png"></ion-img>
+  </div>
+  <div class="btncompte">
+    <ion-button class="test"  (click)="onClick()"  mode="ios" expand="block" shape="round">
+      consulter mon solde
+    </ion-button>
+  </div>
+ 
+
+</div>
+<div class="btnSection">
+<!--   
+  1 - onClick modal
+  2 - 
+ -->
+  <div >
+    <ion-button class="btnaddpayement" routerLink='/payement'>
+      <ion-icon name="wallet-outline"></ion-icon>
+    </ion-button>
+  </div>
+
+  <div>
+    <ion-button class="btncall" (onclick)="onClick()" >
+      
+      <ion-icon name="call-outline"></ion-icon>
+    </ion-button>
+  </div>
+</div>
+
+
+
+<div class="listSection">
+  <ion-text color="primary">
+    <h2>Mes 5 dernières paiement 
+    </h2>
+  </ion-text>
+  <ion-item>
+    <ion-avatar slot="start">
+      <img src="../../assets/logo/edmlogo.jpg" />
+    </ion-avatar>
+    <ion-label>
+      Facture d'electricité
+  </ion-label>
+  <ion-text color="primary">
+    <h1>1000F</h1>
+  </ion-text>
+  </ion-item>
+
+  
+  
+  <ion-item>
+    <ion-avatar slot="start">
+      <img src="../../assets/logo/somagep-logo.png" />
+    </ion-avatar>
+    <ion-label>
+      Facture d'eau
+  </ion-label>
+  <ion-text color="primary">
+    <h1>1500F</h1>
+  </ion-text>
+  </ion-item>
+
+  <ion-item>
+    <ion-avatar slot="start">
+      <img src="../../assets/logo/starttimespost2.jpg" />
+      
+    </ion-avatar>
+    <ion-label>
+      Isago
+  </ion-label>
+  <ion-text color="primary">
+    <h1>6000F</h1>
+  </ion-text>
+  </ion-item>
+
+    <ion-item>
+        <ion-avatar slot="start">
+          <img src="../../assets/logo/tntsatpost1.jpg" />
+        </ion-avatar>
+         <ion-label>
+           Abonnements TV
+        </ion-label>
+        <ion-text color="primary">
+          <h1>5000F</h1>
+        </ion-text>
+    </ion-item>
+</div>
+
+  
+</ion-content>
+
