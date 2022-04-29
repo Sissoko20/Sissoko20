@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { PayementPageRoutingModule } from './payement-routing.module';
 
 import { PayementPage } from './payement.page';
+
 
 @NgModule({
   imports: [

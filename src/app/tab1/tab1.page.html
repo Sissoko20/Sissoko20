@@ -1,8 +1,4 @@
- 
-
-<ion-content [fullscreen]="true">
- 
-
+ <ion-content [fullscreen]="true">
   <div id="container">
     
    <div class="profilePresent">
@@ -13,7 +9,6 @@
     <div class="textShow">
       <p>Bonjour</p>
       <p style="font-weight: bold;">users </p>
-      
     </div>
     <ion-icon slot="end" name="home"></ion-icon>
    </div>
@@ -21,8 +16,8 @@
    <ion-img src="../../assets/pngkit_acuarela-png_7915195.png"></ion-img>
   </div>
   <div class="btncompte">
-    <ion-button class="test"  (click)="onClick()"  mode="ios" expand="block" shape="round">
-      consulter mon solde
+    <ion-button class="test"  (click)="showPopup()"  mode="ios" expand="block" shape="round">
+      Consulter mon solde
     </ion-button>
   </div>
  
@@ -30,11 +25,11 @@
 </div>
 <div class="btnSection">
 <!--   
-  1 - onClick modal
-  2 - 
+  1 - Button payement vous dirige vers le module paiement
+  2 - Button Call vous permet de lancer l'appel vers le service client
  -->
-  <div >
-    <ion-button class="btnaddpayement" routerLink='/payement'>
+  <div>
+    <ion-button class="btnaddpayement" routerLink='/tabs/payement'>
       <ion-icon name="wallet-outline"></ion-icon>
     </ion-button>
   </div>
@@ -47,8 +42,8 @@
   </div>
 </div>
 
-
-
+<!-- La liste section de Tab affiche la liste des cinq derniers paiement
+ -->
 <div class="listSection">
   <ion-text color="primary">
     <h2>Mes 5 dernières paiement 
@@ -62,7 +57,7 @@
       Facture d'electricité
   </ion-label>
   <ion-text color="primary">
-    <h1>1000F</h1>
+    <h2>1000F</h2>
   </ion-text>
   </ion-item>
 
@@ -76,7 +71,7 @@
       Facture d'eau
   </ion-label>
   <ion-text color="primary">
-    <h1>1500F</h1>
+    <h2>1500F</h2>
   </ion-text>
   </ion-item>
 
@@ -89,7 +84,7 @@
       Isago
   </ion-label>
   <ion-text color="primary">
-    <h1>6000F</h1>
+    <h2>6000F</h2>
   </ion-text>
   </ion-item>
 
@@ -101,7 +96,7 @@
            Abonnements TV
         </ion-label>
         <ion-text color="primary">
-          <h1>5000F</h1>
+          <h2>5000F</h2>
         </ion-text>
     </ion-item>
 </div>
